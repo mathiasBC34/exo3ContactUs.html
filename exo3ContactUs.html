@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>formulaire</h1>
+
+    <h2>contactez nous!</h2>
+
+    <form action="">
+        <label> sexe :</label>
+        <input type="radio" name="Sexe" />Masculin
+        <input type="radio" name="Sexe" />féminin
+    </form>
+
+    <br>
+
+    <form action="">
+
+        <label for="il">Nom : </label>
+        <input type="text" id="Nom" name="Nom" pattern="^[A-Z]{2,45}$">
+
+        <label for="il">prénom : </label>
+        <input type="text"  id="prénom" name="prénom" pattern="^([A-Z]{1})[a-z]{2,45}$">
+    </form>
+
+
+    <br>
+    <form action="">
+        <label for="il"> pseudo : </label>
+        <input type="text"  id="prénom" name="prénom" pattern="^([A-Z]{1})[a-z]{2,45}$">
+    </form>
+    </br>
+
+    <form action="">
+        <label for="quantité">Age : </label>
+        <input type="number" name="num" id="num" value="1" max="100" min="1" step="1" />
+    </form>
+
+    <br>
+    <form action="">
+            
+        <div>
+            <label for="quantité">mot de passe: </label>
+            <input type="password" name="Mdp" id="Mdp" min="6" max="8" pattern="^[a-zA-Z]{6-8}+[0-9]+{1,}$">
+        <!-- <input type="submit" value="submit">-->
+        </div>
+
+    </form>
+
+    <br>
+    <label for="comme">lache t'on comme:</label>
+    <form action="">
+        <textarea name="demande" id="input0" class="inputTextArea" rows="4" cols="48" maxlength="128"></textarea>
+    </form>
+
+    <form action="">
+            <legend>langues</legend>
+        <label> Pays :</label>
+        <select name="Langue" multiple>
+            <option value="France">Français</option>
+            <option value="Espagne">Espagnol</option>
+        </select>
+    </form>
+
+    <br>
+    <form action="">
+        <label>Souhaitez vous être contacté par mail</label>
+        <input type="radio" name="Sexe" />oui
+        <input type="radio" name="Sexe" />non
+    </form>
+    <form action="">
+        <div>
+            <label for="il">si oui, e-mail : </label>
+            <input type="email" pattern="^([a-z0-9]+)@([az]+)(\.com|\.net|\.fr|\.org)$ " id="e-mail" name="e-mail"/>
+        </div>
+        <div>
+            <button>Validez</button>
+        </div>
+    </form>
+</body>
+
+</html>
